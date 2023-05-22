@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<title>Strona o świnkach</title>
+	<script>
+	const file=['z1.jpg','z2.png','z3.jpg','z4.jpg','z5.jpeg'];
+	var i=0;
+	function nastepny()
+	{
+		i=i+1;
+		if(i>4)
+			i=0;
+		document.getElementById("galeria").innerHTML="<img width=100%; height=100%; src='img/"+file[i]+"'>";
+	}
+	function poprzedni()
+	{
+		i=i-1;
+		if(i<0)
+			i=4;
+		document.getElementById("galeria").innerHTML="<img width=100%; height=100%; src='img/"+file[i]+"'>";
+	}
+	</script>
+</head>
+<body onload="nastepny()">
+	
+	<div class="container">
+		<div class="header">
+			<H1>Wszystko o świnkach</H1>
+			<img src="pig.png">
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Strona Główna</a></li>
+				<li><a href="oSwinkach.html">O świnkach</a></li>
+				<li><a href="dlaPanaGrzegorza.html">Dla Pana Grzegorza</a></li>
+				<li><a href="Galeria.html">Galeria</a></li>
+				<li><a href="Ciekawostki.html">Ciekawostki</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<input type="submit" value="Poprzednie" onclick="nastepny()"></input>
+			<input type="submit" value="Następne" onclick="poprzedni()"></input>
+			<div id="G">
+				<div id="galeria"><div>
+				
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
