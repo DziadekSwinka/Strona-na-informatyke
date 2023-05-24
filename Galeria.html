@@ -6,12 +6,12 @@
 	<link rel="stylesheet" href="style.css" type="text/css"/>
 	<title>Strona o świnkach</title>
 	<script>
-	const file=['z1.jpg','z2.png','z3.jpg','z4.jpg','z5.jpeg'];
-	var i=0;
+	const file=['z1.jpg','z2.png','z3.jpg','z4.jpg','z5.jpeg','z6.jpg'];
+	var i=5;
 	function nastepny()
 	{
 		i=i+1;
-		if(i>4)
+		if(i>5)
 			i=0;
 		document.getElementById("galeria").innerHTML="<img width=100%; height=100%; src='img/"+file[i]+"'>";
 	}
@@ -19,7 +19,7 @@
 	{
 		i=i-1;
 		if(i<0)
-			i=4;
+			i=5;
 		document.getElementById("galeria").innerHTML="<img width=100%; height=100%; src='img/"+file[i]+"'>";
 	}
 	</script>
@@ -44,10 +44,10 @@
 			<input type="submit" value="Poprzednie" onclick="nastepny()"></input>
 			<input type="submit" value="Następne" onclick="poprzedni()"></input>
 			<div id="G">
-				<div id="galeria"><div>
-				
+				<div id="galeria"></div>
 			</div>
-			
+			<div class="footer">
+			</div>
 		</div>
 	</div>
 </body>

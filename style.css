@@ -113,12 +113,12 @@ body
 	text-decoration: none;
 	color: #175493;
 }
-.content ul>li
+.content #ciekawostki>li
 {
 	text-align:left;
 	border-bottom: 2px dashed #175493;
 }
-.content ul
+.content #ciekawostki
 {
 	margin-left: 15%;
 	margin-right: 15%;
@@ -161,4 +161,21 @@ body
 	width: 250px;
 	border-radius: 15px;
 	font-size: 32px;
+}
+.lista
+{
+	list-style-type: none;
+}
+.footer
+{
+	position: sticky;
+	bottom: 0px;
+	text-align: center;
+	border-top: 2px solid black;
+	background-color: #f3ecdc;
+	color: #175493;
+	margin-top: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	height: 50px;
 }
