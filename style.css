@@ -178,4 +178,8 @@ body
 	padding-bottom: 10px;
 	padding-top: 10px;
 	height: 50px;
+}	
+.footer:after
+{
+	content: "Strona wykonana przez Jakub Kleczek na lekcji informatyki.";
 }
